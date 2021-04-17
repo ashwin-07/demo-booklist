@@ -8,7 +8,6 @@ mongoose.Promise = global.Promise;
 
 before(function(done){
     // //connect to mongodb
-    console.log("b");
     mongoose.connect('mongodb://localhost/testBook', { useNewUrlParser: true, useUnifiedTopology: true });
     mongoose.connection.once('open', function(){
         console.log("connection established to db");
@@ -18,7 +17,6 @@ before(function(done){
 });
 
 beforeEach(function(){
-    console.log("a");
     mongoose.connection.collections.students.drop(function(){
        // done();
     })
