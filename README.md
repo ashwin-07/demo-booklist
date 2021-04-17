@@ -10,4 +10,4 @@ React, GraphQL, Node, Express and MongoDB
 1. Install node and npm in you machine
 2. Go to the project directory, and use command 'npm init'
 3. Create a .env file in server home path and create a property DB_URL with your mongoDB url as the value
-5. Use npm run to start the server
+5. Use npm start to start the server
